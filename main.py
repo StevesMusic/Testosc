@@ -24,3 +24,4 @@ if __name__ == "__main__":
   client = udp_client.SimpleUDPClient(args.ip, args.port)
 
   print(change_fader_volume(client, "01", 1.0))
+
