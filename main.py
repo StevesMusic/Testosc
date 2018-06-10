@@ -24,6 +24,6 @@ if __name__ == "__main__":
   client = udp_client.SimpleUDPClient(args.ip, args.port)
 
 #   for x in range(10):
-CH01_FADER_VOLUME['value'] = 1.0
-client.send_message(*CH01_FADER_VOLUME.values())
+#CH01_FADER_VOLUME['value'] = 1.0
+client.send_message("/ch/01/mix/fader ,f", 1.0)
 # time.sleep(1)
