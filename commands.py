@@ -1,0 +1,1 @@
+CH_FADER_VOLUME = {"command": "/ch/{}/mix/fader, f", "value": 0.0}
