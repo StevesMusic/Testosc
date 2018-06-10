@@ -22,6 +22,7 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   client = udp_client.SimpleUDPClient(args.ip, args.port)
-
-  print(change_fader_volume(client, "01", 1.0))
+  
+  for x in range(20):
+    print(change_fader_volume(client, str(x).zfill(2), 1.0))
 
